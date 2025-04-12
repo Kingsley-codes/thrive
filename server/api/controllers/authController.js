@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import User from '../models/UserModel.js';
+import User from '../models/userModel.js';
 import { validationResult } from 'express-validator';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_here';
