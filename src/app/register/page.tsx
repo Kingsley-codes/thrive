@@ -41,8 +41,8 @@ export default function Register() {
       setTimeout(() => {
         router.push(redirectPath);
       }, 2000);
-    } catch (error: any) {
-      if (error.response) {
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error) && error.response) {
         setMessage(error.response.data.message || "Something went wrong.");
       } else {
         setMessage("Network error, please try again later.");

@@ -13,8 +13,8 @@ export default function Intro() {
         <p className="mb-4">
           Millions of children in Africa struggle with hunger and lack access to
           quality education. These basic needs are not luxuries—they are
-          essential for a child's growth, development, and future. At Help a
-          Child Africa, we are committed to providing nutritious food and
+          essential for a child&apos;s growth, development, and future. At Help
+          a Child Africa, we are committed to providing nutritious food and
           educational opportunities to children in underprivileged communities.
         </p>
 
@@ -57,9 +57,9 @@ export default function Intro() {
         </h2>
         <p className="mb-4">
           Every donation, volunteer effort, and shared story brings us closer to
-          transforming a child's future. Whether it's funding a school meal,
-          sponsoring a child's education, or spreading awareness, your support
-          makes a real impact.
+          transforming a child&apos;s future. Whether it&apos;s funding a school
+          meal, sponsoring a child&apos;s education, or spreading awareness,
+          your support makes a real impact.
         </p>
         <p>
           Together, we can break the cycle of poverty and give children the
