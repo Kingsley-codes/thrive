@@ -32,10 +32,14 @@ export default function Register() {
       const { data } = await axios.post("/api/auth/register", formData);
 
       setFormData({ name: "", email: "", password: "", type: "donor" });
-      setMessage("Registration successful! Redirecting to onboarding...");
+      setMessage("Registration successful! Redirecting ...");
+
+      const userRole = data.user?.role;
+
+      const redirectPath = userRole === "volunteer" ? "/onboarding" : "/donate";
 
       setTimeout(() => {
-        router.push("/onboarding");
+        router.push(redirectPath);
       }, 2000);
     } catch (error: any) {
       if (error.response) {

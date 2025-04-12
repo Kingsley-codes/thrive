@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { CldImage } from "next-cloudinary";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const images: string[] = [
@@ -70,9 +71,11 @@ export default function Hero() {
         <p className="text-lg mb-8">
           Where we believe in a brighter future for every child in Africa.
         </p>
-        <button className="bg-white text-blue-500 px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition duration-300">
-          Get Started
-        </button>
+        <Link href="/register">
+          <button className="bg-white text-blue-500 px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition duration-300">
+            Get Started
+          </button>
+        </Link>
       </div>
     </div>
   );

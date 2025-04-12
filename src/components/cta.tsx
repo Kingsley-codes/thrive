@@ -17,9 +17,11 @@ export const CTA = () => {
             and scholarships to children in need. Every dollar counts and makes
             a significant impact.
           </p>
-          <button className="bg-blue-600 text-white py-3 px-4 mt-4 shadow-xl rounded-3xl cursor-pointer">
-            Donate
-          </button>
+          <Link href="/donate">
+            <button className="bg-blue-600 text-white py-3 px-4 mt-4 shadow-xl rounded-3xl cursor-pointer">
+              Donate
+            </button>
+          </Link>
         </div>
         <div>
           <h3 className="mb-4 text-2xl text-blue-600">Sponsor a Child</h3>
@@ -28,9 +30,11 @@ export const CTA = () => {
             need to succeed in school and life. Your support can change their
             future.
           </p>
-          <button className="bg-blue-600 text-white py-3 px-4 mt-4 shadow-xl rounded-3xl cursor-pointer">
-            Support
-          </button>
+          <Link href="/sponsor">
+            <button className="bg-blue-600 text-white py-3 px-4 mt-4 shadow-xl rounded-3xl cursor-pointer">
+              Support
+            </button>
+          </Link>
         </div>
         <div>
           <h3 className="mb-4 text-2xl text-blue-600">Volunteer </h3>

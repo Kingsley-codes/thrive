@@ -10,9 +10,11 @@ export default function Footer() {
   return (
     <footer className="p-4 bg-blue-600 text-white">
       <div className="w-full flex items-center flex-col">
-        <button className="text-blue-600 text-4xl font-semibold bg-white py-3 px-4 mt-4 shadow-xl rounded-3xl">
-          Donate Now
-        </button>
+        <Link href="/donate">
+          <button className="text-blue-600 text-4xl font-semibold bg-white py-3 px-4 mt-4 shadow-xl rounded-3xl">
+            Donate Now
+          </button>
+        </Link>
       </div>
 
       <div className="flex gap-4 mt-5 px-4">

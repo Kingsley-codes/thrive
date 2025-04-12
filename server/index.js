@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import 'dotenv/config';
 import next from "next";
 import authRouter from './api/routes/authRoutes.js';
+import donateRouter from './api/routes/donateRoute.js';
 
 
 const dev = process.env.NODE_ENV !== "production";
@@ -30,6 +31,7 @@ app.prepare().then(async () => {
     // Define API routes
 
     server.use("/api/auth", authRouter);  // Register auth routes
+    server.use("/api", donateRouter);  // Register donation routes
 
     server.get("/api/hello", (req, res) => {
         res.json({ message: "Hello from Express API!" });
