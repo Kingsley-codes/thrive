@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-4xl font-bold text-blue-600">About Us</h1>
         <p className="mt-4 text-lg text-gray-700">
           Learn more about Help a Child Africa, our mission, and the impact we
-          are making in children's lives across Africa.
+          are making in children&apos;s lives across Africa.
         </p>
       </div>
 

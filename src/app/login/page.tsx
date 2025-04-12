@@ -37,8 +37,8 @@ export default function Login() {
       setTimeout(() => {
         router.push(redirectPath); // or whatever route you'd like
       }, 1500);
-    } catch (error: any) {
-      if (error.response) {
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error) && error.response) {
         setMessage(error.response.data.message || "Invalid credentials.");
       } else {
         setMessage("Network error, please try again later.");

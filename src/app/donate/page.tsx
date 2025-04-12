@@ -5,11 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import axios from "axios";
 import { customList } from "country-codes-list";
 
-interface Country {
-  name: string;
-  dial_code: string;
-}
-
 interface FormData {
   name: string;
   email: string;
